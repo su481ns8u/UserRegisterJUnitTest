@@ -53,4 +53,31 @@ public class UserRegestrationJUnitTest {
         boolean result = userRegestrationMain.lastNameValidation(keys);
         Assert.assertEquals(result,values);
     }
+
+    @Parameterized.Parameters
+    public static Collection<Object[]> testForEmail(){
+        Object[][] testingEmails = new Object[][]{
+                {"abc@yahoo.com", true},
+                {"abc-100@yahoo.com", true},
+                {"abc.100@yahoo.com", true},
+                {"abc111@abc.com", true},
+                {"abc-100@abc.net", true},
+                {"abc.100@abc.com.net", true},
+                {"abc@1.com", true},
+                {"abc@gmail.com.com", true},
+                {"abc+100@gmail.com", true},
+                {".abc@gmail.com", false},
+                {"alice.@example.c", false},
+                {"alice@example.dd..com", false},
+                {"alice:;@example.com", false},
+                {"?alice.@example.com", false},
+        };
+        return Arrays.asList(testingEmails);
+    }
+
+    @Test
+    public void validateEmail() {
+        boolean result = userRegestrationMain.lastNameValidation(keys);
+        Assert.assertEquals(result,values);
+    }
 }
