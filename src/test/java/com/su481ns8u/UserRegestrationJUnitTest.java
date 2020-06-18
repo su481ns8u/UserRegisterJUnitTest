@@ -99,5 +99,20 @@ public class UserRegestrationJUnitTest {
         Assert.assertEquals(result,values);
     }
 
+    /* ----- Validation for password ----- */
+    @Parameterized.Parameters
+    public static Collection<Object[]> testForPassword(){
+        Object[][] testingPasswords = new Object[][]{
+                {"sudhanshu", true},
+                {"su12", false}
+        };
+        return Arrays.asList(testingPasswords);
+    }
+
+    @Test
+    public void validatePassword() {
+        boolean result = userRegestrationMain.passwordValidation(keys);
+        Assert.assertEquals(result,values);
+    }
 
 }
