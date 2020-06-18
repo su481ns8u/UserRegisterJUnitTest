@@ -103,10 +103,12 @@ public class UserRegestrationJUnitTest {
     @Parameterized.Parameters
     public static Collection<Object[]> testForPassword(){
         Object[][] testingPasswords = new Object[][]{
-                {"Sudh123anshu", true},
-                {"sudha12nshu", false},
-                {"Su123sdh",true},
-                {"Su1dh",false}
+                {"Sudh123ansh@u", true},
+                {"sudha12nsh$u", false},
+                {"@Su123sdh",true},
+                {"Su1dh",false},
+                {"Su768hjbmn",false},
+                {"Sushahsna",false}
         };
         return Arrays.asList(testingPasswords);
     }
