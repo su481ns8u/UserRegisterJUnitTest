@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.su481ns8u.UserRegestrationJUnitTest" tests="4" skipped="0" failures="2" errors="0" timestamp="2020-06-18T21:48:50" hostname="DESKTOP-9DCLVAF" time="0.008">
+<testsuite name="com.su481ns8u.UserRegestrationJUnitTest" tests="4" skipped="0" failures="2" errors="0" timestamp="2020-06-18T21:55:27" hostname="DESKTOP-9DCLVAF" time="0.007">
   <properties/>
-  <testcase name="validatePassword[0]" classname="com.su481ns8u.UserRegestrationJUnitTest" time="0.006">
+  <testcase name="validatePassword[0]" classname="com.su481ns8u.UserRegestrationJUnitTest" time="0.005">
     <failure message="java.lang.AssertionError: expected:&lt;false&gt; but was:&lt;true&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;false&gt; but was:&lt;true&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -66,7 +66,7 @@
 </failure>
   </testcase>
   <testcase name="validatePassword[1]" classname="com.su481ns8u.UserRegestrationJUnitTest" time="0.001"/>
-  <testcase name="validatePassword[2]" classname="com.su481ns8u.UserRegestrationJUnitTest" time="0.0">
+  <testcase name="validatePassword[2]" classname="com.su481ns8u.UserRegestrationJUnitTest" time="0.001">
     <failure message="java.lang.AssertionError: expected:&lt;false&gt; but was:&lt;true&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;false&gt; but was:&lt;true&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)

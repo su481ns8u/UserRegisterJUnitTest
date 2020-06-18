@@ -19,6 +19,6 @@ public class UserRegestrationMain {
     }
 
     public boolean passwordValidation (String password) {
-        return password.matches("(?=[^A-Z]*[A-Z])[[:alnum:]]{8,}$");
+        return password.matches("^((?=.*([0-9])(?=.*[A-Z])[a-zA-Z]{8,}))$");
     }
 }
