@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.su481ns8u.UserRegestrationJUnitTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-06-18T18:31:11" hostname="DESKTOP-9DCLVAF" time="0.002">
+  <properties/>
+  <testcase name="firstNameValidation_returnsFalse_ifFirstCharNotUpper" classname="com.su481ns8u.UserRegestrationJUnitTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
