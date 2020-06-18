@@ -70,14 +70,34 @@ public class UserRegestrationJUnitTest {
                 {"alice.@example.c", false},
                 {"alice@example.dd..com", false},
                 {"alice:;@example.com", false},
-                {"?alice.@example.com", false},
+                {"?alice.@example.com", false}
         };
         return Arrays.asList(testingEmails);
     }
 
     @Test
     public void validateEmail() {
-        boolean result = userRegestrationMain.lastNameValidation(keys);
+        boolean result = userRegestrationMain.emailValidation(keys);
         Assert.assertEquals(result,values);
     }
+
+    /* ----- Phone Number Validation ----- */
+    @Parameterized.Parameters
+    public static Collection<Object[]> testForMobileNum(){
+        Object[][] testingMobile = new Object[][]{
+                {"91 9822917991", true},
+                {"91   9822917991", false},
+                {"913 9822917991", true},
+                {"9822917991", false}
+        };
+        return Arrays.asList(testingMobile);
+    }
+
+    @Test
+    public void validateMobileNumber() {
+        boolean result = userRegestrationMain.mobileValidation(keys);
+        Assert.assertEquals(result,values);
+    }
+
+
 }

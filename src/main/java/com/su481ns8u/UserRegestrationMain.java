@@ -13,4 +13,8 @@ public class UserRegestrationMain {
     public boolean emailValidation (String email) {
         return email.matches("^[a-zA-Z0-9]+(([._+-]?)[a-zA-Z0-9]+)*@[a-zA-Z0-9]+.[a-zA-Z]{2,4}([.][a-zA-Z]{2,3})*$");
     }
+
+    public boolean mobileValidation (String mobile) {
+        return mobile.matches("^[1-9]+[0-9]+[\\ ]?+[1-9]{1}[0-9]{9}$");
+    }
 }
