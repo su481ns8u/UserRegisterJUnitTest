@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.su481ns8u.UserRegestrationJUnitTest" tests="4" skipped="0" failures="2" errors="0" timestamp="2020-06-18T21:43:17" hostname="DESKTOP-9DCLVAF" time="0.005">
+<testsuite name="com.su481ns8u.UserRegestrationJUnitTest" tests="4" skipped="0" failures="2" errors="0" timestamp="2020-06-18T21:48:50" hostname="DESKTOP-9DCLVAF" time="0.008">
   <properties/>
-  <testcase name="validateFirstName[0]" classname="com.su481ns8u.UserRegestrationJUnitTest" time="0.004">
+  <testcase name="validatePassword[0]" classname="com.su481ns8u.UserRegestrationJUnitTest" time="0.006">
     <failure message="java.lang.AssertionError: expected:&lt;false&gt; but was:&lt;true&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;false&gt; but was:&lt;true&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
 	at org.junit.Assert.assertEquals(Assert.java:118)
 	at org.junit.Assert.assertEquals(Assert.java:144)
-	at com.su481ns8u.UserRegestrationJUnitTest.validateFirstName(UserRegestrationJUnitTest.java:37)
+	at com.su481ns8u.UserRegestrationJUnitTest.validatePassword(UserRegestrationJUnitTest.java:117)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -65,14 +65,14 @@
 	at java.base/java.lang.Thread.run(Thread.java:834)
 </failure>
   </testcase>
-  <testcase name="validateFirstName[1]" classname="com.su481ns8u.UserRegestrationJUnitTest" time="0.0"/>
-  <testcase name="validateFirstName[2]" classname="com.su481ns8u.UserRegestrationJUnitTest" time="0.001">
+  <testcase name="validatePassword[1]" classname="com.su481ns8u.UserRegestrationJUnitTest" time="0.001"/>
+  <testcase name="validatePassword[2]" classname="com.su481ns8u.UserRegestrationJUnitTest" time="0.0">
     <failure message="java.lang.AssertionError: expected:&lt;false&gt; but was:&lt;true&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;false&gt; but was:&lt;true&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
 	at org.junit.Assert.assertEquals(Assert.java:118)
 	at org.junit.Assert.assertEquals(Assert.java:144)
-	at com.su481ns8u.UserRegestrationJUnitTest.validateFirstName(UserRegestrationJUnitTest.java:37)
+	at com.su481ns8u.UserRegestrationJUnitTest.validatePassword(UserRegestrationJUnitTest.java:117)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -130,7 +130,7 @@
 	at java.base/java.lang.Thread.run(Thread.java:834)
 </failure>
   </testcase>
-  <testcase name="validateFirstName[3]" classname="com.su481ns8u.UserRegestrationJUnitTest" time="0.0"/>
+  <testcase name="validatePassword[3]" classname="com.su481ns8u.UserRegestrationJUnitTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
