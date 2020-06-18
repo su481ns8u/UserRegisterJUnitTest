@@ -54,6 +54,7 @@ public class UserRegestrationJUnitTest {
         Assert.assertEquals(result,values);
     }
 
+    /* ----- Validation for all conditions of email ----- */
     @Parameterized.Parameters
     public static Collection<Object[]> testForEmail(){
         Object[][] testingEmails = new Object[][]{
