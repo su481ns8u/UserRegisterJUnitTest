@@ -1,13 +1,13 @@
 package com.su481ns8u;
 
-public class UserRegestrationMain {
+public class UserRegistration {
 
     public boolean firstNameValidation (String fname) {
-        return fname.matches("^[A-Z]{1}[a-z]{2,}");
+        return fname.matches("^[A-Z]{1}[a-z]{2,}$");
     }
 
     public boolean lastNameValidation (String lname) {
-        return lname.matches("^[A-Z]{1}[a-z]{2,}");
+        return lname.matches("^[A-Z]{1}[a-z]{2,}$");
     }
 
     public boolean emailValidation (String email) {
@@ -19,6 +19,7 @@ public class UserRegestrationMain {
     }
 
     public boolean passwordValidation (String password) {
-        return password.matches("^((?=.*([0-9])(?=.*[A-Z])(?=.*[!@#$%^&*]{1})[a-zA-Z]{8,}))$");
+        //return password.matches("^((?=.*([0-9]))(?=.*([A-Z]))(?=.*([@#$%]{1})))[a-zA-Z]{8,}$");
+        return password.matches("^(?=.{8,}$)(?=.*?[a-z])(?=.*?[A-Z])(?=.*?[0-9])((?=.*?\\W){1}).*$");
     }
 }
