@@ -11,7 +11,8 @@ public class UserRegistration {
     }
 
     public boolean emailValidation (String email) {
-        return email.matches("^[a-zA-Z0-9]+(([._+-]?)[a-zA-Z0-9]+)*@[a-zA-Z0-9]+.[a-zA-Z]{2,4}([.][a-zA-Z]{2,3})*$");
+        return email.matches
+                ("^[a-zA-Z0-9]+(([._+-]?)[a-zA-Z0-9]+)*@[a-zA-Z0-9]+.[a-zA-Z]{2,4}([.][a-zA-Z]{2,3})*$");
     }
 
     public boolean mobileValidation (String mobile) {
@@ -19,7 +20,6 @@ public class UserRegistration {
     }
 
     public boolean passwordValidation (String password) {
-        //return password.matches("^((?=.*([0-9]))(?=.*([A-Z]))(?=.*([@#$%]{1})))[a-zA-Z]{8,}$");
         return password.matches("^(?=.{8,}$)(?=.*?[a-z])(?=.*?[A-Z])(?=.*?[0-9])((?=.*?\\W){1}).*$");
     }
 }
